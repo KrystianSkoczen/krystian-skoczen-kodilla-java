@@ -1,4 +1,7 @@
-package com.kodilla.testing;
+package com.kodilla;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public class Calculator {
 
@@ -12,7 +15,7 @@ public class Calculator {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Calculator calculator = new Calculator();
         double subtraction = calculator.subtraction();
 
