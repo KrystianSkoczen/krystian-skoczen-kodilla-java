@@ -22,7 +22,7 @@ public class CollectionTestSuite {
         //Given
         ArrayList<Integer> emptyList = new ArrayList<>();
         //When
-        ArrayList<Integer> result = exterminator.exterminate(emptyList);
+        ArrayList<Integer> result = exterminator.exterminateEmptyList(emptyList);
         //Then
         Assert.assertEquals(0, result.size());
     }
@@ -30,17 +30,17 @@ public class CollectionTestSuite {
     @Test
     public void testOddNumbersExterminatorNormalList() {
         //Given
-        ArrayList<Integer> normalList = new ArrayList<>();
-            normalList.add(5);
+        ArrayList<Integer> numbers = new ArrayList<>();
+     /**    normalList.add(5);
             normalList.add(3);
             normalList.add(7);
             normalList.add(2);
             normalList.add(4);
             normalList.add(6);
-            normalList.add(8);
+            normalList.add(8); **/
         //When
-        ArrayList<Integer> result = exterminator.exterminate(normalList);
+        ArrayList<Integer> resulted = exterminator.exterminate(numbers);
         //Then
-        Assert.assertEquals(4, result.size());
+        Assert.assertEquals(4, resulted.size());
     }
 }
